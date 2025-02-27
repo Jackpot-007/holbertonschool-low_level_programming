@@ -1,41 +1,42 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_fizz_buzz - Prints numbers from 1 to 100 with FizzBuzz rules.
+ * main - Entry point
+ * Description: Prints the numbers from 1 to 100,
+ * but prints 'Fizz' for multiples of 3, 'Buzz' for multiples of 5,
+ * and 'FizzBuzz' for multiples of both 3 and 5.
+ *
+ * Return: Always 0 (Success)
  */
-void print_fizz_buzz(void)
+int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 100; i++)
-	{
-	if (i % 3 == 0 && i % 5 == 0)
+		for (i = 1; i <= 100; i++)
 		{
-		_putchar('F'), _putchar('i'), _putchar('z'), _putchar('z');
-		_putchar('B'), _putchar('u'), _putchar('z'), _putchar('z');
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
 		}
-	else if (i % 3 == 0)
+		else if (i % 3 == 0)
 		{
-		_putchar('F'), _putchar('i'), _putchar('z'), _putchar('z');
+			printf("Fizz");
 		}
-	else if (i % 5 == 0)
+		else if (i % 5 == 0)
 		{
-		_putchar('B'), _putchar('u'), _putchar('z'), _putchar('z');
+			printf("Buzz");
 		}
-	else
-	
-	{
-	
-	if (i >= 10)
+		else
 		{
-		_putchar(i / 10 + '0');  /* Print tens place */
-		_putchar(i % 10 + '0');  /* Print ones place */
+			printf("%d", i);
+		}
+
+	        if (i != 100)
+		{
+			printf(" ");
 		}
 	}
-	if (i != 100)
-	{
-		_putchar(' ');  /* Print space between numbers */
-	}
-	}
-	_putchar('\n');  /* Print newline at the end */
+	printf("\n");
+
+	return (0);
 }
