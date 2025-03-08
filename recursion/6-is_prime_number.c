@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * check_prime - Recursively checks if n is divisible by any number from 2 to sqrt(n).
+ * check_prime - Recursively checks if n is divisible
+ * by any number from 2 to sqrt(n).
  * @n: The number to check.
  * @div: The current divisor to test.
  *
