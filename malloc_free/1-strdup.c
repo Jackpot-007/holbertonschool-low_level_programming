@@ -3,19 +3,19 @@
 
 /**
  * _strdup - Returns a pointer to a newly allocated space in memory,
- *           which contains a copy of the given string.
+ * which contains a copy of the given string.
  * @str: The string to duplicate.
  *
- * Return: Pointer to the duplicated string, or NULL if insufficient memory
- *         was available or if str is NULL.
+ * Return: Pointer to the duplicated string, or NULL if insufficient
+ * memory was available or if str is NULL.
  */
 char *_strdup(char *str)
 {
 	char *dup;
- 	int i, len = 0;
+	int i, len = 0;
 
 	if (str == NULL)
-	return NULL;
+	return (NULL);
 
 	/* Calculate the length of the string */
 	while (str[len] != '\0')
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	dup = malloc(sizeof(char) * (len + 1));
 
 	if (dup == NULL) /* Check if memory allocation failed */
-	return NULL;
+	return (NULL);
 
 	/* Copy the string into the newly allocated space */
 	for (i = 0; i < len; i++)
