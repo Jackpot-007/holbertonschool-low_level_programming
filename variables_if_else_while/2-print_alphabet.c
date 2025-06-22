@@ -1,24 +1,22 @@
 #include <stdio.h>
 
 /**
- * Declare una variable e inicialícela con el primer miembro de
- * el rango [a - z]
+ * main - Declare a variable and initialize it with the first member
+ * of the range [a - z]
  *
- * Verifique si el valor actual de su variable es menor que
- * o igual que el último miembro(z) del rango dado. Mientra el valor
- * sea menor, continúe e imprima el vaor
+ * Return: Always (0)
  */
 
 int main(void)
 {
-	char alfabeto = 'a';
+	char alphabet = 'a';
 
-	while (alfabeto <= 'z')
+	while (alphabet <= 'z')
 	{
 
-	putchar(alfabeto);
+	putchar(alphabet);
 
-	alfabeto++;
+	alphabet++;
 	}
 
 	putchar('\n');
