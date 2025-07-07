@@ -8,6 +8,8 @@
  * @dest: pointer character
  *
  * @src: pointer character
+ *
+ * Return: start
  */
 
 char *_strcpy(char *dest, char *src)
