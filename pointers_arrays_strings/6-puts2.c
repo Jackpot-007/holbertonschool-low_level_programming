@@ -8,16 +8,16 @@
  * @str: pointer character
  */
 
-void puts2(char *str)
+void puts2(char *s)
 {
-	int length;
-	int i;
+	int a;
 
-	length = strlen(str);
-
-	for (i = 0; i < length; i += 2)
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		putchar(str[i]);
+		if (a % 2 == 0)
+		{
+			putchar(s[a]);
+		}
 	}
 	putchar('\n');
 }
