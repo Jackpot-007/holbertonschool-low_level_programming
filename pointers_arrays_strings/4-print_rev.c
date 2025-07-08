@@ -10,12 +10,12 @@
 
 void print_rev(char *s)
 {
-	int i;
 	int length = 0;
+	int i;
 
 	if (s == NULL)
 	{
-		putchar('\n');
+		printf("\n");
 		return;
 	}
 
@@ -23,7 +23,7 @@ void print_rev(char *s)
 
 	for (i = length - 1; i >= 0; i--)
 	{
-		putchar(s[i]);
+		printf("%c", s[i]);
 	}
-	putchar('\n');
+	printf("\n");
 }
