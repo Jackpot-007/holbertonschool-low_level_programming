@@ -10,19 +10,20 @@
 
 void print_rev(char *s)
 {
-	int length;
 	int i;
+	int length = 0;
 
-	if (s == NULL) {
-	return;
+	if (s == NULL)
+	{
+		putchar('\n');
+		return;
 	}
 
 	length = strlen(s);
 
 	for (i = length - 1; i >= 0; i--)
 	{
-	putchar(s[i]);
+		putchar(s[i]);
 	}
-
 	putchar('\n');
 }
