@@ -10,20 +10,12 @@
 
 void print_rev(char *s)
 {
-	int length = 0;
-	int i;
+	const char *p = s;
 
-	if (s == NULL)
-	{
-		_putchar('\n');
-		return;
-	}
+	while (*p) ++p;
 
-	length = strlen(s);
+	while (p != s) _putchar(*--p);
 
-	for (i = length - 1; i >= 0; i--)
-	{
-		_putchar(s[i]);
-	}
 	_putchar('\n');
+
 }
