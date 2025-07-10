@@ -1,11 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
- * puts2 - print all other characters in a string
+ * puts2 - prints every other character of a string, starting
  *
- * @str: pointer character
+ * @s : pointer character
  */
 
 void puts2(char *s)
@@ -16,8 +16,8 @@ void puts2(char *s)
 	{
 		if (a % 2 == 0)
 		{
-			putchar(s[a]);
+			printf("%c", s[a]);
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
