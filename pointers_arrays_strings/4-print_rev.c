@@ -12,10 +12,15 @@ void print_rev(char *s)
 {
 	const char *p = s;
 
-	while (*p) ++p;
+	while (*p)
+	{
+		++p;
+	}
 
-	while (p != s) _putchar(*--p);
+	while (p != s)
+	{
+		_putchar(*--p);
+	}
 
 	_putchar('\n');
-
 }
