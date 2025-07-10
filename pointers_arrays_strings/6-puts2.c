@@ -10,34 +10,14 @@
 
 void puts2(char *s)
 {
-	int length = 0;
-	int i;
+	int a;
 
-	if (s == NULL)
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		char nl = '\n';
-		write(1, &nl, 1);
-		return;
+		if (a % 2 == 0)
+		{
+			_putchar(s[a]);
+		}
 	}
-
-	length = strlen(s);int length = 0;
-	int i;
-
-	if (s == NULL)
-	{
-			char nl = '\n';
-			write(1, &nl, 1);
-			return;
-	}
-
-	length = strlen(s);
-
-	for (i = length - 1; i >= 0; i--)
-	{
-			write(1, &s[i], 1);
-	}
-	{
-			char nl = '\n';
-			write(1, &nl, 1);
-	}
+	_putchar('\n');
 }
