@@ -14,8 +14,12 @@
 
 char *_strchr(char *s, char c)
 {
-	char *s = "hello";
-	char c;
-
-	if (c != NULL)
-	
+	for(int i = 0; s[i]; i++)
+	{
+		if (s[i] == c)
+			return s + i;
+		if (s[i] == '\0')
+			break;
+	}
+	return NULL;
+}
