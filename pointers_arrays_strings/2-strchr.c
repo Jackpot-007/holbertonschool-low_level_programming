@@ -14,12 +14,11 @@
 
 char *_strchr(char *s, char c)
 {
-	for(int i = 0; s[i]; i++)
-	{
-		if (s[i] == c)
-			return s + i;
-		if (s[i] == '\0')
-			break;
-	}
-	return NULL;
+	if (s == NULL)
+		return (NULL);
+
+	for(; *s != '\0'; s++)
+		if(*s == c)
+			return s;
+	return (NULL);
 }
