@@ -1,5 +1,6 @@
-#include "main.h"
+#include "lists.h"
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * print_list - a function that prints
