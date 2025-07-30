@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagonal - a function that
@@ -9,20 +10,21 @@
 
 void print_diagonal(int n)
 {
-	int len, space;
+	int i, j;
 
-	if (n > 0)
+	if (n <= 0)
 	{
-		for (len = 0; len < n; len++)
+		_putchar('\n');
+		return;
+	}
+
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < i; j++)
 		{
-			for (space = 0; space < len; space++)
-				_putchar(' ');
-			_putchar('\\');
-
-			if (len == n - 1)
-				continue;
-
-			_putchar('\n');
+			_putchar(' ');
 		}
+		_putchar('\\');
+		_putchar('\n');
 	}
 }
