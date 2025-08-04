@@ -6,13 +6,14 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
-	char *s = "hello, world";
-	char *f = "world";
-	char *t;
+	char str[] = "Look up!\n";
+	char *ptr;
 
-	t = _strstr(s, f);
-	printf("%s\n", t);
+	ptr = string_toupper(str);
+	printf("%s", ptr);
+	printf("%s", str);
 	return (0);
 }
