@@ -3,33 +3,35 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - function returns a pointer to a new string which is a duplicate of the string str.
+ * *_strdup - function returns a pointer
+ * to a new string which is a duplicate
+ * of the string str.
  *
  * @str: character pointer
  *
  * Return: NULL if str = NULL
  */
-
 char *_strdup(char *str)
 {
-	char *duplicate;
-	int i;
+	char *dup;
+	unsigned int i, len;
+
+	i = 0;
+	len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; str[i]; i++)
-		mblen;
+	while (str[len])
+		len++;
 
-	duplicate = malloc(sizeof(char) * (mblen + 1));
+	dup = malloc(sizeof(char) * (len + 1));
 
-	if (duplicate == NULL)
+	if (dup == NULL)
 		return (NULL);
 
-	for (i = 0; str[i]; i++)
-		duplicate[i] = str[i];
+	while ((dup[i] = str[i]) != '\0')
+		i++;
 
-	duplicate[mblen] = '\0';
-
-	return (duplicate);
+	return (dup);
 }
